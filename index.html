@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro2Javascript</title>
+
+</head>
+<body>
+    <div class="container">
+    <h1>java script exercise</h1>
+    <h2>Enter 2 equal numbers:</h2> 
+    <input type="number" id="input_equalnums1" value="0">
+    <input type="number" id="input_equalnums2" value="0">
+    <button id="btn_equalnums">check</button>
+    <p><span id="output_boom_tryagin"></span></p>   
+    <hr>
+    <h2>Enter 2 numbers for sum:</h2>
+    <input type="number" id="input_addition1" value="0">
+    <input type="number" id="input_addition2" value="0">
+    <button id="btn_addition">add</button>
+    <p><span id="output_addition"></span></p>
+    <hr>
+    <h2>Enter 2 numbers to multiply:</h2>
+    <input type="number" id="input_multi1" value="0">
+    <input type="number" id="input_multi2" value="0">
+    <button id="btn_multi">add</button>
+    <p><span id="output_multi"></span></p>
+    <hr>
+    <h2>Choose day of the week:</h2>
+    <select id="select_day">
+        <option disabled selected>choose day</option>
+        <option value="1">Sunday</option>
+        <option value="2">Monday</option>
+        <option value="3">Tuesday</option>
+        <option value="4">Wednesday</option>
+        <option value="5">Thursday</option>
+        <option value="6">Friday</option>
+        <option value="7">Saturday</option>
+    </select>
+    <p><span id="output_dayOfWeek"></span></p>
+    <hr>
+    <h2>Choose a day in the month:</h2>
+    <input type="number" id="input_dayOfMonth" min="1" max="31" value="1" >
+    <p><span id="output_dayOfMonth"></span></p>
+    <hr>
+    <h2>Select holiday</h2>
+    <button onclick="btnPurim()">Purim</button>
+    <button onclick="btnShavuot()">Shavuot</button>
+    <button onclick="btnSukot()">Sukot</button>
+    <button onclick="btnPassover()">Passover</button>
+    <p>Lets clebrate <span id="output_holiday"></span></p>
+    <hr>
+    <h2>Enter username and password</h2>
+    <form id="userForm">
+        <label>Username</label>
+        <input type="text" id="input_username" placeholder="Enter you'r username here">
+        <br>
+        <label >Password</label>
+        <input type="password" id="input_password" placeholder="Enter you'r password here" >
+        <P><span id="output_formMsg"></span></P>
+        <br>
+        <button type="button" id="btn_form">sign in</button>
+    </form>
+
+    </div> 
+    <script src="script.js"></script>
+
+</body>
+</html>
